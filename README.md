@@ -6,13 +6,22 @@
 
 ## 읽는 순서
 
-### 1. 변경의 경계
+### 1. Clean Architecture를 읽으며
+
+- [좋은 설계는 개발 속도를 늦추는가](clean-architecture/chapter-01-design-is-investment.md)
+
+  기존 코드 재활용과 일정 압박 속에서, 좋은 설계가 현실을 무시하는 이상론이 아니라 미래 비용이 어디로 이동하는지 보게 해주는 투자라는 생각을 다룹니다.
+- [아키텍처를 지킨다는 것은 무엇일까](clean-architecture/chapter-02-protecting-architecture.md)
+
+  Clean Architecture의 "투쟁"이라는 표현을 실무 경험과 연결해, 아키텍처를 지킨다는 것이 반대를 위한 반대가 아니라 책임과 변경 비용을 설명하는 일이라는 생각을 다룹니다.
+
+### 2. 변경의 경계
 
 - [왜 우리는 책임을 분리해야 할까](boundary/boundary-01-why-we-separate-responsibilities.md)
 
   하나의 Controller에 역할이 쌓였던 경험을 통해, 책임 분리가 코드 정리가 아니라 변경 전파를 제한하는 설계라는 점을 살펴봅니다.
 
-### 2. Feature 단위의 소유권
+### 3. Feature 단위의 소유권
 
 - [같은 사용자 의도는 하나의 Feature가 책임져야 한다](ownership/ownership-01-who-owns-common-flow.md)
 
@@ -21,7 +30,7 @@
 
   충전기 번개 아이콘처럼 여러 모듈이 같은 제품 사양을 따라야 할 때, 공통화해야 하는 것은 UI가 아니라 판단 기준과 변경 책임이라는 점을 다룹니다.
 
-### 3. 상태 변경의 경계
+### 4. 상태 변경의 경계
 
 - [왜 우리는 항상 Mutex부터 떠올릴까](concurrency/concurrency-01-atomic-operation.md.md)
 
