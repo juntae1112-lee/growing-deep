@@ -14,12 +14,18 @@
 - [아키텍처를 지킨다는 것은 무엇일까](clean-architecture/chapter-02-protecting-architecture.md)
 
   Clean Architecture의 "투쟁"이라는 표현을 실무 경험과 연결해, 아키텍처를 지킨다는 것이 반대를 위한 반대가 아니라 책임과 변경 비용을 설명하는 일이라는 생각을 다룹니다.
+- [패러다임은 무엇을 제한하는가](clean-architecture/chapter-03-05-paradigms-and-dependency.md)
+
+  구조적 프로그래밍과 객체지향 프로그래밍을 제약과 의존성 방향의 관점에서 다시 이해하며, 패러다임이 위험한 자유를 제한하는 방식이라는 생각을 다룹니다.
 
 ### 2. 변경의 경계
 
 - [왜 우리는 책임을 분리해야 할까](boundary/boundary-01-why-we-separate-responsibilities.md)
 
   하나의 Controller에 역할이 쌓였던 경험을 통해, 책임 분리가 코드 정리가 아니라 변경 전파를 제한하는 설계라는 점을 살펴봅니다.
+- [인터페이스는 누가 소유해야 할까](boundary/boundary-02-who-owns-the-interface.md)
+
+  Google Auto SDK와 책바퀴 사례를 통해, 다형성을 쓰는 것보다 중요한 것은 비즈니스 로직이 필요한 계약을 소유하고 세부 구현이 그 계약을 따르게 만드는 것이라는 생각을 다룹니다.
 
 ### 3. Feature 단위의 소유권
 
