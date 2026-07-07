@@ -17,6 +17,9 @@
 - [패러다임은 무엇을 제한하는가](clean-architecture/chapter-03-05-paradigms-and-dependency.md)
 
   구조적 프로그래밍과 객체지향 프로그래밍을 제약과 의존성 방향의 관점에서 다시 이해하며, 패러다임이 위험한 자유를 제한하는 방식이라는 생각을 다룹니다.
+- [함수형 프로그래밍은 왜 할당을 제한할까](clean-architecture/chapter-06-functional-programming.md)
+
+  함수형 프로그래밍을 문법이 아니라 할당과 공유 변경 상태를 제한하는 방식으로 바라보고, race condition과 deadlock이 생길 수 있는 표면을 줄이는 관점으로 정리합니다.
 
 ### 2. 변경의 경계
 
