@@ -22,7 +22,7 @@
   함수형 프로그래밍을 문법이 아니라 할당과 공유 변경 상태를 제한하는 방식으로 바라보고, race condition과 deadlock이 생길 수 있는 표면을 줄이는 관점으로 정리합니다.
 - [SRP는 하나의 기능이 아니라 하나의 변경 이유를 말한다](clean-architecture/chapter-07-single-responsibility-principle.md)
 
-  SRP를 "클래스 하나에 기능 하나"가 아니라 actor와 변경 이유의 관점에서 다시 이해하고, RouteExternal과 routeGuideState 사례를 통해 책임이 섞이는 순간을 정리합니다.
+  SRP를 "클래스 하나에 기능 하나"가 아니라 actor와 변경 이유의 관점에서 다시 이해하고, 외부 전송과 상태 설계 사례를 통해 책임이 섞이는 순간을 정리합니다.
 - [OCP는 변경 가능성이 큰 곳과 작은 곳을 나누는 원칙이다](clean-architecture/chapter-08-open-closed-principle.md)
 
   책바퀴의 domain/data 구조를 기준으로, API와 지도 SDK처럼 자주 바뀌는 세부사항은 열어두고 비즈니스 로직은 외부 변경에 흔들리지 않게 닫아두는 관점을 정리합니다.
