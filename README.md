@@ -14,9 +14,15 @@
 - [아키텍처를 지킨다는 것은 무엇일까](clean-architecture/chapter-02-protecting-architecture.md)
 
   Clean Architecture의 "투쟁"이라는 표현을 실무 경험과 연결해, 아키텍처를 지킨다는 것이 반대를 위한 반대가 아니라 책임과 변경 비용을 설명하는 일이라는 생각을 다룹니다.
-- [패러다임은 무엇을 제한하는가](clean-architecture/chapter-03-05-paradigms-and-dependency.md)
+- [패러다임은 무엇을 제한하는가](clean-architecture/chapter-03-paradigms.md)
 
-  구조적 프로그래밍과 객체지향 프로그래밍을 제약과 의존성 방향의 관점에서 다시 이해하며, 패러다임이 위험한 자유를 제한하는 방식이라는 생각을 다룹니다.
+  패러다임을 문법이 아니라 위험한 자유를 제한하는 방식으로 바라보고, 좋은 구조가 사람에게만 의존하지 않도록 코드 레벨 제약을 만든다는 생각을 다룹니다.
+- [구조적 프로그래밍은 왜 제어 흐름을 제한했을까](clean-architecture/chapter-04-structured-programming.md)
+
+  `goto`가 가진 자유를 제한하고, 사람이 이해 가능한 실행 흐름을 만들기 위해 구조적 프로그래밍이 어떤 제약을 만들었는지 정리합니다.
+- [객체지향은 왜 의존성 방향을 제어할까](clean-architecture/chapter-05-object-oriented-programming.md)
+
+  객체지향의 다형성을 구현체 교체 기술이 아니라, 안정적인 정책이 세부사항에 끌려가지 않도록 의존성 방향을 제어하는 기술로 다시 이해합니다.
 - [함수형 프로그래밍은 왜 할당을 제한할까](clean-architecture/chapter-06-functional-programming.md)
 
   함수형 프로그래밍을 문법이 아니라 할당과 공유 변경 상태를 제한하는 방식으로 바라보고, race condition과 deadlock이 생길 수 있는 표면을 줄이는 관점으로 정리합니다.
