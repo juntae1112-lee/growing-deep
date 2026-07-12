@@ -20,8 +20,18 @@
 - [함수형 프로그래밍은 왜 할당을 제한할까](clean-architecture/chapter-06-functional-programming.md)
 
   함수형 프로그래밍을 문법이 아니라 할당과 공유 변경 상태를 제한하는 방식으로 바라보고, race condition과 deadlock이 생길 수 있는 표면을 줄이는 관점으로 정리합니다.
+- [SRP는 하나의 기능이 아니라 하나의 변경 이유를 말한다](clean-architecture/chapter-07-single-responsibility-principle.md)
+
+  SRP를 "클래스 하나에 기능 하나"가 아니라 actor와 변경 이유의 관점에서 다시 이해하고, RouteExternal과 routeGuideState 사례를 통해 책임이 섞이는 순간을 정리합니다.
+- [OCP는 변경 가능성이 큰 곳과 작은 곳을 나누는 원칙이다](clean-architecture/chapter-08-open-closed-principle.md)
+
+  책바퀴의 domain/data 구조를 기준으로, API와 지도 SDK처럼 자주 바뀌는 세부사항은 열어두고 비즈니스 로직은 외부 변경에 흔들리지 않게 닫아두는 관점을 정리합니다.
 
 ### 2. 변경의 경계
+
+Boundary는 변경이 어디까지 전파되지 않게 할 것인가에 대한 기록입니다.
+
+비슷해 보이는 코드라도 변경 이유가 다르면 경계가 필요하고, 그 경계가 무너지면 작은 수정도 넓은 범위로 퍼진다는 생각을 다룹니다.
 
 - [왜 우리는 책임을 분리해야 할까](boundary/boundary-01-why-we-separate-responsibilities.md)
 
@@ -32,6 +42,10 @@
 
 ### 3. Feature 단위의 소유권
 
+Ownership은 상태, 정책, 사용자 흐름을 누가 끝까지 책임질 것인가에 대한 기록입니다.
+
+공통으로 보이는 기능을 합칠지 나눌지는 단순히 코드가 비슷한지가 아니라, 같은 책임과 같은 변경 이유를 가지는지로 판단해야 한다는 생각을 다룹니다.
+
 - [같은 사용자 의도는 하나의 Feature가 책임져야 한다](ownership/ownership-01-who-owns-common-flow.md)
 
   공용 패널을 여러 모듈이 나눠 쓰며 생긴 문제를 통해, 같은 사용자 의도는 feature가 하나의 흐름으로 끝까지 책임져야 한다는 생각을 다룹니다.
@@ -41,10 +55,10 @@
 
 ### 4. 상태 변경의 경계
 
-- [왜 우리는 항상 Mutex부터 떠올릴까](concurrency/concurrency-01-atomic-operation.md.md)
+- [왜 우리는 항상 Mutex부터 떠올릴까](concurrency/concurrency-01-atomic-operation.md)
 
   lock과 atomic operation의 차이, 그리고 lost update가 생기는 이유를 C++ 예제로 다룹니다.
-- [Atomic을 바라보는 관점이 바뀌다](concurrency/concurrency-02-atomic-reference.md.md)
+- [Atomic을 바라보는 관점이 바뀌다](concurrency/concurrency-02-atomic-reference.md)
 
   숫자 하나의 원자적 증가를 넘어, immutable state와 참조 교체로 atomic을 이해해 봅니다.
 - [왜 StateFlow의 update{} 가 필요할까](concurrency/concurrency-03-why-stateflow-needs-update.md)
