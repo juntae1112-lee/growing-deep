@@ -32,6 +32,12 @@
 - [OCP는 변경 가능성이 큰 곳과 작은 곳을 나누는 원칙이다](clean-architecture/chapter-08-open-closed-principle.md)
 
   책바퀴의 domain/data 구조를 기준으로, API와 지도 SDK처럼 자주 바뀌는 세부사항은 열어두고 비즈니스 로직은 외부 변경에 흔들리지 않게 닫아두는 관점을 정리합니다.
+- [같은 타입처럼 쓰려면 같은 약속을 지켜야 한다](clean-architecture/chapter-09-liskov-substitution-principle.md)
+
+  리스코프 치환 원칙을 상속 기법이 아니라 같은 타입이라고 부를 수 있는 기준으로 이해하고, 부모의 구현과 외부 계약을 구분하는 관점으로 정리합니다.
+- [ISP는 사용하지 않는 계약에 의존하지 않게 하는 원칙이다](clean-architecture/chapter-10-interface-segregation-principle.md)
+
+  인터페이스 분리 원칙을 단순히 인터페이스를 작게 나누는 규칙이 아니라, 필요 없는 함수의 변경 이유가 클라이언트에게 전파되지 않게 하는 원칙으로 정리합니다.
 
 ### 2. 변경의 경계
 
