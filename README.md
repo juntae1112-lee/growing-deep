@@ -45,6 +45,9 @@ Boundary는 변경이 어디까지 전파되지 않게 할 것인가에 대한 �
 - [인터페이스는 누가 소유해야 할까](boundary/boundary-02-who-owns-the-interface.md)
 
   Google Auto SDK와 책바퀴 사례를 통해, 다형성을 쓰는 것보다 중요한 것은 비즈니스 로직이 필요한 계약을 소유하고 세부 구현이 그 계약을 따르게 만드는 것이라는 생각을 다룹니다.
+- [호출자가 내부 사정을 보정하기 시작하면 경계가 무너진다](boundary/boundary-03-callers-should-not-know-internals.md)
+
+  내부 delay나 렌더링 타이밍을 호출자가 순서 변경으로 보정하기 시작하면 API 경계가 새기 시작한다는 생각을, 호출 순서와 계약의 관점에서 정리합니다.
 
 ### 3. Feature 단위의 소유권
 
