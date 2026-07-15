@@ -38,6 +38,9 @@
 - [ISP는 사용하지 않는 계약에 의존하지 않게 하는 원칙이다](clean-architecture/chapter-10-interface-segregation-principle.md)
 
   인터페이스 분리 원칙을 단순히 인터페이스를 작게 나누는 규칙이 아니라, 필요 없는 함수의 변경 이유가 클라이언트에게 전파되지 않게 하는 원칙으로 정리합니다.
+- [흐름은 바깥으로 가도, 의존성은 안쪽을 향해야 한다](clean-architecture/chapter-11-dependency-inversion-principle.md)
+
+  의존성 역전 원칙을 제어 흐름과 코드 의존성을 분리하는 원칙으로 이해하고, 책바퀴의 domain/data 구조와 회사의 Controller 구조를 통해 안정적인 정책을 보호하는 관점을 정리합니다.
 
 ### 2. 변경의 경계
 
