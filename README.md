@@ -42,7 +42,13 @@
 
   의존성 역전 원칙을 제어 흐름과 코드 의존성을 분리하는 원칙으로 이해하고, 책바퀴의 domain/data 구조와 회사의 Controller 구조를 통해 안정적인 정책을 보호하는 관점을 정리합니다.
 
-### 2. 변경의 경계
+### 2. 아키텍처 원칙을 내 경험으로 다시 보기
+
+- [SOLID를 내 경험으로 다시 이해하기](architecture/solid-summary-from-my-experience.md)
+
+  SRP, OCP, LSP, ISP, DIP를 exsl, RouteControl, RouteOption, RouteExternal, RouteEngine 경험과 연결해 변경 전파를 통제하는 기준으로 정리합니다.
+
+### 3. 변경의 경계
 
 Boundary는 변경이 어디까지 전파되지 않게 할 것인가에 대한 기록입니다.
 
@@ -58,7 +64,7 @@ Boundary는 변경이 어디까지 전파되지 않게 할 것인가에 대한 �
 
   내부 delay나 렌더링 타이밍을 호출자가 순서 변경으로 보정하기 시작하면 API 경계가 새기 시작한다는 생각을, 호출 순서와 계약의 관점에서 정리합니다.
 
-### 3. Feature 단위의 소유권
+### 4. Feature 단위의 소유권
 
 Ownership은 상태, 정책, 사용자 흐름을 누가 끝까지 책임질 것인가에 대한 기록입니다.
 
@@ -74,7 +80,7 @@ Ownership은 상태, 정책, 사용자 흐름을 누가 끝까지 책임질 것�
 
   서버 계산값과 클라이언트 관측값처럼 여러 값이 존재할 때, 중요한 것은 값을 하나로 합치는 것이 아니라 기준값, 관측값, 보정값, 표시값의 역할을 명확히 나누는 것이라는 생각을 다룹니다.
 
-### 4. 상태 변경의 경계
+### 5. 상태 변경의 경계
 
 - [왜 우리는 항상 Mutex부터 떠올릴까](concurrency/concurrency-01-atomic-operation.md)
 
