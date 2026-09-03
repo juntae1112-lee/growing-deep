@@ -41,6 +41,9 @@
 - [흐름은 바깥으로 가도, 의존성은 안쪽을 향해야 한다](clean-architecture/chapter-11-dependency-inversion-principle.md)
 
   의존성 역전 원칙을 제어 흐름과 코드 의존성을 분리하는 원칙으로 이해하고, 책바퀴의 domain/data 구조와 회사의 Controller 구조를 통해 안정적인 정책을 보호하는 관점을 정리합니다.
+- [컴포넌트는 변경과 배포의 경계다](clean-architecture/chapter-12-component-principles.md)
+
+  컴포넌트의 역사와 JAR/AAR 같은 배포 단위를 바탕으로, REP, CCP, CRP를 재사용, 변경 이유, 릴리스 경계의 관점에서 정리합니다.
 
 ### 2. 아키텍처 원칙을 내 경험으로 다시 보기
 
